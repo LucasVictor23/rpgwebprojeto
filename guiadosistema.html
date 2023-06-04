@@ -5,27 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./guiadosistema.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/guiadosistema.css">
+  <link rel="stylesheet" href="./styles/responsivo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-  <header class="cabecalho">
+  <header class="cabecalho" id="cabecalho">
+    <div class="icone__menu__responsivo">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="logo__responsivo">
+      <p>Projeto RPG Web</p>
+    </div>
     <nav class="cabecalho__menu">
       <ul>
         <a class="cabecalho__menu__link" href="./index.html">Pagina Principal</a>
         <a class="cabecalho__menu__link" href="./guiadosistema.html">Guia do Sistema</a>
-        <a class="cabecalho__menu__link" href="#">missões</a>
+        <a class="cabecalho__menu__link" href="#">Missões</a>
         <a class="cabecalho__menu__link" href="#">Mural de Informações</a>
         <a class="cabecalho__menu__link" href="#">Manuais e Complementos</a>
         <a class="cabecalho__menu__link" href="#">Área do Jogador</a>
         <a class="cabecalho__menu__link" href="#">Loja do Sistema</a>
         <a class="cabecalho__menu__link" href="#">Registros das Sessões</a>
-      </ul>
+      </ul>     
     </nav>
+    <div class="icone__menu__responsivo2">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
   </header>
+  <div class="dropdown__menu">
+    <li><a class="cabecalho__menu__link" href="./index.html">Pagina Principal</a></li>
+    <li><a class="cabecalho__menu__link" href="./guiadosistema.html">Guia do Sistema</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Missões</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Mural de Informações</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Manuais e Complementos</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Área do Jogador</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Loja do Sistema</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Registros das Sessões</a></li>
+  </div>
   <div class="conteiner__nav__secundaria">
     <div class="menu__guia__sistema">
       <nav class="menu__guia__sistema__nav">
@@ -39,33 +60,32 @@
           <a class="menu__guia__sistema__link" href="#planeta__gaia">O mundo de Gaia</a>
           <a class="menu__guia__sistema__link" href="#loja__sistema">Loja do Sistema</a>
           <a class="menu__guia__sistema__link menu__guia__sistema__link__centralizado" href="#plataformas__auxiliares">Plataformas Auxiliares</a>
-        </nav>            
+        </nav>           
     </div>
   </div>
   <main class="Principal">
-    <section class="conteiner__guiasistema">
-      <div class="guia__conteudo">
+    <section class="sessao__guia__sistema">
+      <div class="guia__sistema__box1">
         <h2 class="titulo__guia">Guia do<strong class="titulo__guia__str"> Sistema</strong></h2>
         <p class="paragrafo conteudo__principal">Olá! como eu ja havia dito antes eu sou o <strong class="paragrafo__principal__str">Sistema</strong>, fui criado para auxiliar em sua jornada. Acessei suas memórias, e estarei me manifestando como a ciência do seu mundo chamada de tecnologia para facilitar sua compreensão enquanto quantifico e traduzo as informações de Gaia para você.</p>
         <p class="paragrafo conteudo__principal">Primeiro vamos te apresentar as funcionalidades. Existem oito Sessões principais: <strong>Pagina Principal, Guia do Sistema, Missões, Mural de Informações, Manuais e Complementos, Área do Jogador, Loja do Sistema e Registros das Sessões.</strong></p>
         <p class="paragrafo conteudo__principal">Na <strong>Pagina Principal</strong> você ira encontrar uma breve introdução da historia, inserindo o(a) jogador(a) ao cenário da campanha.</p>
         <p class="paragrafo conteudo__principal">O <strong>Guia do Sistema</strong> é um banco de dados onde o(a) jogador(a) pode acessar informações importantes que podem ser de grande utilidade caso se encontre com alguma duvida.</p>
         <p class="paragrafo conteudo__principal">A sessão <strong>Missões</strong> Fica arquivado as missões em andamento do(a) jogador(a) com algumas informações que podem ser consultadas a qualquer momento.</p>
-        <div class="guia__imagem__2"><img src="./assets/depositphotos_217424282-stock-illustration-abstract-technology-futuristic-concept-hud.jpg"></div>               
       </div>
-      <div>        
-        <div class="guia__imagem__1"><img src="./assets/tecnologia-abstrata-ui-futurista-hud-interface-holograma_36402-262.avif"></div>
-        <div class="paragrafo__centralizado__guia">
-          <p class="paragrafo conteudo__principal">O <strong>Mural de Informações</strong> é um local reservado para notas e recados off-game. Como datas das sessões, mudanças de horas e dias das sessões, adiamentos, etc.</p>
-          <p class="paragrafo conteudo__principal">Aqui você terá acesso aos links dos <strong>Manuais e Complementos</strong> caso seja necessário fazer uma consulta ou pesquisa. E para que não tenha conflito entre as versões dos manuais que tem disponíveis na internet criarei uma biblioteca.</p>
-          <p class="paragrafo conteudo__principal">Na <strong>Área do Jogador</strong> estarão as informações relacionadas ao personagem, estatísticas e sua evolução.</p>
-          <p class="paragrafo conteudo__principal">A <strong>Loja do Sistema</strong> é como o nome sugere, é uma loja onde você poderá comprar vários tipos de coisas usando <strong>pontos de XP</strong> como moeda de troca.</p>
-          <p class="paragrafo conteudo__principal">E por ultimo temos a sessão de <strong>Registros das Sessões</strong> Um espaço reservado para documentar algumas informações importantes dos acontecimentos e ações dos jogadores que impactaram e podem gerar mudanças ou reações em cadeia.</p> </div>
-      </div>      
+      <div class="guia__sistema__box2"><img src="./assets/depositphotos_217424282-stock-illustration-abstract-technology-futuristic-concept-hud.jpg" alt="" class="guia__sistema__imagem1"></div>
+      <div class="guia__sistema__box3"><img src="./assets/tecnologia-abstrata-ui-futurista-hud-interface-holograma_36402-262.avif" alt="" class="guia__sistema__imagem2"></div>
+      <div class="guia__sistema__box4">
+        <p class="paragrafo conteudo__principal">O <strong>Mural de Informações</strong> é um local reservado para notas e recados off-game. Como datas das sessões, mudanças de horas e dias das sessões, adiamentos, etc.</p>
+        <p class="paragrafo conteudo__principal">Aqui você terá acesso aos links dos <strong>Manuais e Complementos</strong> caso seja necessário fazer uma consulta ou pesquisa. E para que não tenha conflito entre as versões dos manuais que tem disponíveis na internet criarei uma biblioteca.</p>
+        <p class="paragrafo conteudo__principal">Na <strong>Área do Jogador</strong> estarão as informações relacionadas ao personagem, estatísticas e sua evolução.</p>
+        <p class="paragrafo conteudo__principal">A <strong>Loja do Sistema</strong> é como o nome sugere, é uma loja onde você poderá comprar vários tipos de coisas usando <strong>pontos de XP</strong> como moeda de troca.</p>
+        <p class="paragrafo conteudo__principal">E por ultimo temos a sessão de <strong>Registros das Sessões</strong> Um espaço reservado para documentar algumas informações importantes dos acontecimentos e ações dos jogadores que impactaram e podem gerar mudanças ou reações em cadeia.</p> 
+      </div>        
     </section>
     <div class="sessao__separador" id="criando__personagem"></div>
     <section class="sessao__criando__personagem">
-      <div class="sessao__criando__personagem__conteudo">
+      <div class="criando__personagem__box1">
         <h2 class="titulo__guia titulo__criando__personagem" >Criando <strong>Personagem</strong></h2>
         <p class="paragrafo conteudo__principal">Agora vamos começar a criação de personagem. <br>Com a bênção da centelha divina seu corpo transcendeu os limites do corpo humano comum, no momento você pode não sentir muita diferença, mas se cultiva-lo de forma correta quem sabe você também não se torne alguém extraordinário...</p>
         <p class="paragrafo conteudo__principal">Você terá um corpo novinho em folha e poderá <strong>cria-lo conforme sua vontade</strong>. Mas já vou avisando... Qualquer modificação que não tenha nenhum custo não passará de estética e não dará nenhum tipo de vantagem, até que o jogador(a) invista <strong>pontos de xp</strong>, ou seja, para habilitar qualquer habilidade, vantagem ou poder será preciso pagar um custo equivalente/proporcional ou que ja esteja estipulado no manual alpha.</p>
@@ -76,33 +96,27 @@
         <p class="paragrafo conteudo__principal">O <strong>caminho do protetor</strong>: Aura (resistência X 5), mana (resistência x 2) e pontos de vida (resistência x 7).<br></p>
         <p class="paragrafo conteudo__principal">Conforme o(a) Personagem for ficando mais forte, seu caminho irá evoluir e se aperfeiçoando desbloqueando novas vantagens e habilidades. </p>
       </div>
-      <div >        
-        <div class="paragrafo__borda"><p class="paragrafo conteudo__principal paragrafo__borda__conteudo"><strong>Distribuindo os Pontos:</strong> Você terá <strong>5 pontos</strong> para distribuir na sua ficha. <br>Você também poderá ter até duas <strong>desvantagens</strong> podendo receber até <br><strong>2 pontos</strong>, por duas desvantagens de <strong>-1 ponto</strong> ou uma desvantagem de <strong>-2 pontos</strong>. Assim podendo somar até <strong>7 pontos</strong> no total para distribuir na ficha.</p></div>
-        <div class="sessao__criando__personagem__imagem"><img class="sessao__criando__personagem__imagem__1" src="./assets/corpohumano.webp"></div>
+      <div class="criando__personagem__box2">
+          <p class="paragrafo conteudo__principal criando__personagem__bordar"><strong>Distribuindo os Pontos:</strong> Você terá <strong>5 pontos</strong> para distribuir na sua ficha. Você também poderá ter até duas <strong>desvantagens</strong> podendo receber até <strong>2 pontos</strong>, por duas desvantagens de <strong>-1 ponto</strong> ou uma desvantagem de <strong>-2 pontos</strong>. Assim podendo somar até <strong>7 pontos</strong> no total para distribuir na ficha.</p>
       </div>
+      <div class="criando__personagem__box3"><img src="./assets/corpohumano.webp" alt="" class="criando__personagem__imagem1"></div>
     </section>
     <div class="sessao__separador" id="sobre__sistema"></div>
     <section class="sessao__sobre__sistema">
       <div class="sobre__sistema__box1">
-        <div class="sessao__sobre__sistema__conteudo">
-          <h2 class="titulo__guia sobre__sistema__titulo">Sobre o <strong>Sistema</strong></h2>
-          <p class="paragrafo conteudo__principal">O <strong>Sistema</strong> é a personificação do poder da centelha divina na forma de um sistema de jogo para ajudar na compreensão do(a) jogador(a) e auxilia-lo(a) no uso de suas habilidades e quantificar os parâmetros das suas estatísticas gerais.</p>
-          <p class="paragrafo conteudo__principal">Por mais que seja uma energia extremamente poderosa que está ligada à origem de tudo, o <strong>Sistema</strong> não terá uma consciência.</p>
-        </div>
+        <h2 class="titulo__guia sobre__sistema__titulo">Sobre o <strong>Sistema</strong></h2>
+        <p class="paragrafo conteudo__principal">O <strong>Sistema</strong> é a personificação do poder da centelha divina na forma de um sistema de jogo para ajudar na compreensão do(a) jogador(a) e auxilia-lo(a) no uso de suas habilidades e quantificar os parâmetros das suas estatísticas gerais.</p>
+        <p class="paragrafo conteudo__principal">Por mais que seja uma energia extremamente poderosa que está ligada à origem de tudo, o <strong>Sistema</strong> não terá uma consciência.</p>
       </div>
-      <div class="sobre__sistema__box2"><img class="sobre__sistema__imagem1" src="./assets/istockphoto-1317326137-170667a.jpg"></div>
+      <div class="sobre__sistema__box2"><img src="./assets/istockphoto-1317326137-170667a.jpg" alt="" class="sobre__sistema__imagem1"></div>
       <div class="sobre__sistema__box3">
-        <div class="sessao__sobre__sistema__conteudo">
         <p class="paragrafo conteudo__principal">Você deve está se perguntando por que diabos você iria querer acessar o <strong>Sistema</strong> durante uma batalha...</p>
         <p class="paragrafo conteudo__principal">Dentre suas inúmeras funções, existe a <strong>Loja do Sistema</strong>. Através do poder divino acumulado, que foi quantificado como <strong>pontos de xp</strong>, O(a) jogador(a) poderá ter acesso à diversos itens, equipamentos, habilidades e poderes exclusivos que somente uma divindade poderia ter acesso.</p>
-        <p class="paragrafo conteudo__principal">Mas para tudo existem regras, ainda mais com poderes divinos... primeiro de tudo, o tempo vai continuar normalmente enquanto estiver acessando o <strong>Sistema</strong>, isso quer dizer que por estar dividindo sua atenção, seu tempo de reação diminui resultando em uma  <strong>penalidade de - 1</strong> nos testes. Outra regra é que para comprar um item <strong>exigem 3 ações</strong>: abrir o <strong>Sitema</strong>, selecionar o item e por fim, comprar o item; o que equivale à <strong>3 turnos</strong> para finalizar todo o processo.<br><br>(OBS: Caso o item comprado seja para outro jogador será adicionado mais <strong>1 turno</strong> como penalidade, que seria a ação de entregar o item)</p>
-        </div>
       </div>
-      <div class="sobre__sistema__box4">
-        <div class="sessao__sobre__sistema__conteudo">
-          <p class="paragrafo conteudo__principal">O(a) jogador(a) poderá interagir com o <strong>Sistema</strong> canalizando sua vontade e usando seus pensamentos para selecionar uma ação.<br>
-          Seria como se existisse uma ficha de RPG na sua mente e que você pudesse acessa-lo e configura-lo a qualquer momento... isso mesmo, a qualquer momento, mesmo durante a batalha.</p>
-          </div>
+      <div class="sobre__sistema__box4">        
+        <p class="paragrafo conteudo__principal">Mas para tudo existem regras, ainda mais com poderes divinos... primeiro de tudo, o tempo vai continuar normalmente enquanto estiver acessando o <strong>Sistema</strong>, isso quer dizer que por estar dividindo sua atenção, seu tempo de reação diminui resultando em uma  <strong>penalidade de - 1</strong> nos testes. Outra regra é que para comprar um item <strong>exigem 3 ações</strong>: abrir o <strong>Sitema</strong>, selecionar o item e por fim, comprar o item; o que equivale à <strong>3 turnos</strong> para finalizar todo o processo.<br><br>(OBS: Caso o item comprado seja para outro jogador será adicionado mais <strong>1 turno</strong> como penalidade, que seria a ação de entregar o item)</p>
+        <p class="paragrafo conteudo__principal">O(a) jogador(a) poderá interagir com o <strong>Sistema</strong> canalizando sua vontade e usando seus pensamentos para selecionar uma ação.<br>
+        Seria como se existisse uma ficha de RPG na sua mente e que você pudesse acessa-lo e configura-lo a qualquer momento... isso mesmo, a qualquer momento, mesmo durante a batalha.</p>
       </div>
     </section>
     <div class="sessao__separador" id="ponto__xp"></div>
@@ -110,7 +124,7 @@
       <div class="ponto__xp__box1">
         <h2 class="titulo__guia sobre__sistema__titulo">Usando <strong>Ponto de XP</strong></h2>
           <p class="paragrafo conteudo__principal ponto__xp__conteudo">Os <strong>Pontos de XP</strong> é o acumulo de poder divino que foi cultivado ao fazer ações que levam o seu corpo e mente ao limite, deixando-os ainda mais forte.
-          Imagine os pontos de xp como uma moeda de troca muito poderosa, que será usada para diversas funções no sistema.</p><br><br>
+          Imagine os pontos de xp como uma moeda de troca muito poderosa, que será usada para diversas funções no sistema.</p><br>
           <p class="paragrafo conteudo__principal ponto__xp__conteudo"><strong>Aumento de atributos</strong>: Por ser considerado uma energia o pontos de xp pode aumentar as estatísticas do seus atributos pagando um custo estipulado pelo sistema para cada nível.<br><br>
           <strong>Evoluir  maestria</strong>: Pagando um preço estipulado para cada nível de evolução, você poderá aumentar o rank das suas habilidades, técnicas e poderes; Aumentando seu domínio sobre elas e elevando seus bonus e efeitos. 
           Aumento de atributos: Por ser considerado uma energia o pontos de xp pode aumentar as estatísticas do seus atributos pagando um custo estipulado pelo sistema para cada nível.</p>          
@@ -119,33 +133,32 @@
         <p class="paragrafo conteudo__principal ponto__xp__conteudo"><strong>Comprando vantagens</strong>: Usando o manual alpha como base o(a) jogador(a) poderá adquirir vantagens caso tenha o uqe é preciso. Agora irei explicar como os pontos de xp serão calculados, 10 pontos de xp equivale a 1 ponto no manual <br>(10 XP = 1 Ponto).<br><br>
         Comprando na <strong>Loja do Sistema</strong>: Todos os itens vendidos usarão pontos de xp como moeda de troca.</p>
       </div>
-      <div class="ponto__xp__box3"></div>
-      <div class="ponto__xp__box4"><img src="./assets/xpimagem.jpg" alt="criaturas segurando uma placa" class="ponto__xp__imagem1"></div>
+      <div class="ponto__xp__box3"><img src="./assets/xpimagem.jpg" alt="criaturas segurando uma placa" class="ponto__xp__imagem1"></div>
     </section>
     <div class="sessao__separador" id="habilidades__e__pericias"></div>
     <section class="sessao__habilidades__e__pericias" >
-      <div class="habilidades__pericias__box1">
+      <div class="habilidades__pericias__box1">        
         <h2 class="titulo__guia sobre__sistema__titulo">Habilidades e <strong>Perícias</strong></h2>
-          <p class="paragrafo conteudo__principal ponto__xp__conteudo">Existe uma grande diferencia entre <strong>habilidades e perícias</strong>. As perícias podem ser adquiridas com tempo e esforço, assim como um jovem aprendiz de ferreiro com décadas de práticas se tornará um mestre ferreiro. Resumindo é algo que um humano consegue alcançar apenas com seu esforço, mas não subestime um mestre perito, isso pode te trazer à ruína. Os mestres peritos estão no topo da humanidade considerada comum, isso é um fato... mas e se alguém transcender esse limite?</p>
-          <img src="./assets/tumblr-p4dsbcwzj-M1takdglo8-400.gif" alt="" class="habilidades__pericias__imagem1">
+        <p class="paragrafo conteudo__principal ponto__xp__conteudo">Existe uma grande diferencia entre <strong>habilidades e perícias</strong>. As perícias podem ser adquiridas com tempo e esforço, assim como um jovem aprendiz de ferreiro com décadas de práticas se tornará um mestre ferreiro. Resumindo é algo que um humano consegue alcançar apenas com seu esforço, mas não subestime um mestre perito, isso pode te trazer à ruína. Os mestres peritos estão no topo da humanidade considerada comum, isso é um fato... mas e se alguém transcender esse limite?</p>
       </div>
-      <div class="habilidades__pericias__box2">
-        <p class="paragrafo conteudo__principal ponto__xp__conteudo">É ai que entram as habilidades, o resultado de um mestre perito que superou os limites dos humanos e sua perícia se tornou uma habilidade. Semelhante à magia, exigiria um determinado custo de energia ao ativar uma habilidade mas seus poderes e efeitos serias algo extraordinário comparado com as perícias.<br>Perícias podem ser adquiridas no Sistema ou através de mentoria fazendo um teste.</p>
-      </div>
+      <div class="habilidades__pericias__box2"><img src="./assets/tumblr-p4dsbcwzj-M1takdglo8-400.gif" alt="" class="habilidades__pericias__imagem1"></div>
       <div class="habilidades__pericias__box3">
-        <p class="paragrafo conteudo__principal ponto__xp__conteudo">Existindo um rank de classificação que determina o nível de proficiência do perito: F, E, D, C, B, A, S e SS;</p>
-        <img src="./assets/yyh.jfif" alt="" class="habilidades__pericias__imagem2">
+        <p class="paragrafo conteudo__principal">É ai que entram as habilidades, o resultado de um mestre perito que superou os limites dos humanos e sua perícia se tornou uma habilidade. Semelhante à magia, exigiria um determinado custo de energia ao ativar uma habilidade mas seus poderes e efeitos serias algo extraordinário comparado com as perícias.<br>Perícias podem ser adquiridas no Sistema ou através de mentoria fazendo um teste.</p>
       </div>
-      <div class="habilidades__pericias__box4">
-        <p class="paragrafo conteudo__principal ponto__xp__conteudo">O nível de proficiência  influência diretamente no resultado quando dois mestres se confrontam usando suas perícias ou habilidades.<br> Um exemplo seria um caçador perito em [Rastreio E] com PC (Poder de Combate) de 20 contra um ladino perito em [Furtividade C] com um PC de 15, claramente o poder geral do caçador é maior, ou seja, considerando apenas os atributos ele seria bem mais forte que o ladino.<br><br>
-        Porém podemos ver que a [Furtividade C] do ladino é dois ranks acima que o [Rastreio E] do caçador, quando existe uma diferença muito grande nos ranks das perícias, a não ser que seja algo ligado a batalha ou tenha outros fatores influenciando, geralmente a perícia de rank maior se sobrepõe a de rank inferior mesmo que o PC do adversário seja maior.</p>
+      <div class="habilidades__pericias__box4">        
+        <p class="paragrafo conteudo__principal">Existindo um rank de classificação que determina o nível de proficiência do perito: F, E, D, C, B, A, S e SS;</p>
+      </div>
+      <div class="habilidades__pericias__box5"><img src="./assets/yyh.jfif" alt="" class="habilidades__pericias__imagem2"></div>
+      <div class="habilidades__pericias__box6">
+        <p class="paragrafo conteudo__principal">O nível de proficiência  influência diretamente no resultado quando dois mestres se confrontam usando suas perícias ou habilidades.<br> Um exemplo seria um caçador perito em [Rastreio E] com PC (Poder de Combate) de 20 contra um ladino perito em [Furtividade C] com um PC de 15, claramente o poder geral do caçador é maior, ou seja, considerando apenas os atributos ele seria bem mais forte que o ladino.<br><br>
+        Porém podemos ver que a [Furtividade C] do ladino é dois ranks acima que o [Rastreio E] do caçador, quando existe uma diferença muito grande nos ranks das perícias, a não ser que seja algo ligado a batalha ou tenha outros fatores influenciando, geralmente a perícia de rank maior se sobrepõe a de rank inferior mesmo que o PC do adversário seja maior.</p>  
       </div>
     </section>
     <div class="sessao__separador" id="poderes__e__tecnicas"></div>
     <section class="sessao__poderes__e__tecnicas" >
       <div class="poderes__tecnicas__box1">
         <h2 class="titulo__guia sobre__sistema__titulo">Poderes e <strong>Técnicas</strong></h2>
-          <p class="paragrafo conteudo__principal ponto__xp__conteudo">Existem muitas formas de adquirir <strong>Poderes e Técnicas</strong>, mas as mais comuns serão através do Sistema ou por mentoria de um mestre. A primeira opção é mais simples, contanto que tenha pontos de xp suficientes poderá comprar na Loja do Sistema ou completando as missões do sistema e adquirindo através de recompensas.</p>
+          <p class="paragrafo conteudo__principal">Existem muitas formas de adquirir <strong>Poderes e Técnicas</strong>, mas as mais comuns serão através do Sistema ou por mentoria de um mestre. A primeira opção é mais simples, contanto que tenha pontos de xp suficientes poderá comprar na Loja do Sistema ou completando as missões do sistema e adquirindo através de recompensas.</p>
       </div>
       <div class="poderes__tecnicas__box2"><img src="./assets/zBVDu1j.gif" alt="" class="poderes__tecnicas__imagem1"></div>
       <div class="poderes__tecnicas__box3"><img src="./assets/giphy.gif" alt="" class="poderes__tecnicas__imagem2"></div>
@@ -206,14 +219,16 @@
     <section class="sessao__plataformas__auxiliares">
       <div class="plataformas__auxiliares__box1">
         <h2 class="titulo__guia sobre__sistema__titulo">Plataformas <strong>Auxiliares</strong></h2>
-        <p class="paragrafo conteudo__principal ponto__xp__conteudo">Um espaço reservado para outras plataformas e ferramentas que iremos usar durante as sessões. Lá conterá os link para facilitar o acesso e uso.<br><br></p>
-        <img src="./assets/ilustracao-3d-sobre-plataformas-digitais.webp" alt="" class="plataformas__auxiliares__imagem1">
+        <p class="paragrafo conteudo__principal ponto__xp__conteudo">Um espaço reservado para outras plataformas e ferramentas que iremos usar durante as sessões. Lá conterá os link para facilitar o acesso e uso.</p>        
       </div>
       <div class="plataformas__auxiliares__box2">
-        <p class="paragrafo conteudo__principal ponto__xp__conteudo">Olá eu sou o GM, estou desenvolvendo esse projeto web para poder melhorar meu conhecimento, mas também estou criando para poder trazer uma imersão um pouco diferente na nossa experiência de jogo.<br>
-        Esse é o meu primeiro projeto, então peço a compreensão caso ainda tenha algumas falhas para corrigir.<br> 
-        A pagina ainda está em desenvolvimento, mas como eu tenho outros projetos, vou subir essa pagina e conforme eu vou concluindo o projeto irei atualizando a pagina.<br>
-        Também gostaria de saber a opinião de vocês, se puderem me dar um feedback ficaria muito grato. Sem mais delongas, espero que aproveitem a pagina.</p>
+        <img src="./assets/ilustracao-3d-sobre-plataformas-digitais.webp" alt="" class="plataformas__auxiliares__imagem1">
+      </div>
+      <div class="plataformas__auxiliares__box3">        
+        <p class="paragrafo conteudo__principal plataformas__auxiliares__borda">Olá eu sou o GM, estou desenvolvendo esse projeto web para poder melhorar meu conhecimento, mas também estou criando para poder trazer uma imersão um pouco diferente na nossa experiência de jogo.
+        Esse é o meu primeiro projeto, então peço a compreensão caso ainda tenha algumas falhas para corrigir.
+        A pagina ainda está em desenvolvimento, mas como eu tenho outros projetos, vou subir essa pagina e conforme eu vou concluindo o projeto irei atualizando a pagina.
+        Também gostaria de saber a opinião de vocês, se puderem me dar um feedback ficaria muito grato. Sem mais delongas, espero que aproveitem a pagina.</p>        
       </div>
     </section>
     <div class="sessao__separador"></div>
@@ -221,6 +236,21 @@
   <footer>
 
   </footer>
+  <script>
+    const botaoMenu = document.querySelector(".icone__menu__responsivo")
+    const botaoMenuIcone = document.querySelector(".icone__menu__responsivo i")
+    const dropdownMenu = document.querySelector(".dropdown__menu")
+
+    botaoMenu.onclick = function () {
+    dropdownMenu.classList.toggle("open")
+    const isOpen = dropdownMenu.classList.contains("open")
+    
+    botaoMenuIcone.classList = isOpen
+      ? "fa-solid fa-xmark"
+      : "fa-solid fa-bars"
+
+    }
+  </script>
 </body>
 </html>
 
