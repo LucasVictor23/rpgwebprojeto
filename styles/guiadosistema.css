@@ -1,0 +1,603 @@
+:root {
+  --cor-fonte-principal: #f6f6f6;
+  --cor-fonte-secundario: #E384FF;
+  --cor-fundo-principal: #000000;
+  --cor-botao-principal: #865DFF;
+  --cor-box-menu: #FFA3FD;
+  --cor-texto-menu: #751b91;
+  --fonte-principal: 'Josefin Sans';
+  --fonte-secundaria: 'Roboto';
+  --fonte-menu: 'Bebas Neue';
+}
+
+
+
+.menu__guia__sistema {
+  display: block;
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid var(--cor-box-menu);
+  position: fixed;
+  margin: 10em 0 0 0.50em;   
+}
+
+.menu__guia__sistema__nav {
+  align-items: center;
+  border-radius: 10px;  
+  grid-area: "menu__guia__sistema";  
+  overflow:auto;
+  flex-direction: column;
+  display: flex;  
+}
+
+.menu__guia__sistema__link {  
+  padding: 0.25em 1em 0.25em 1em; 
+  gap: 1px;    
+  font-family: var(--fonte-menu);
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--cor-fonte-principal);
+}
+.menu__guia__sistema__link__centralizado {
+  text-align: center;
+}
+
+.menu__guia__sistema__link:hover {
+  color: var(--cor-fonte-secundario);
+}
+
+.sessao__separador {
+  border: 1px solid var(--cor-fonte-secundario);
+  max-width: 1200px;
+  margin: 5em auto 5em auto;
+}
+
+.voltar__ao__topo__link:hover {
+  color: var(--cor-fonte-secundario);
+}
+
+img {
+  height: 250px;
+  width: 450px;
+}
+
+.sessao__guia__sistema {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  grid-gap: 2px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+}
+
+
+
+.paragrafo__centralizado__guia {
+  margin: 0 0 0 3em;
+}
+  
+
+.titulo__guia {
+  margin: 3em 0 1em 0;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cor-fonte-principal);
+}
+
+.titulo__guia__str {
+  color: var(--cor-fonte-secundario);
+}
+strong {
+  color: var(--cor-fonte-secundario);
+}
+
+.sessao__criando__personagem {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  grid-gap: 1em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "criando__personagem__box1 criando__personagem__box2"
+  "criando__personagem__box1 criando__personagem__box3"
+  ;
+}
+
+.criando__personagem__box1 {
+ grid-area: "criando__personagem__box1";
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 1;
+ grid-row-end: 3;
+ display: flex; 
+ flex-direction: column;
+ align-items: center;
+}
+
+.criando__personagem__box2 {
+  grid-area: "criando__personagem__box2";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid var(--cor-box-menu);
+  border-radius: 10px;
+  margin: 11em 0 0 0;
+  height: 25vh;
+  padding: 0 0 0 0.70em;
+}
+
+.criando__personagem__box3 {
+  grid-area: "criando__personagem__box3";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 5em 0;
+}
+
+
+
+.sessao__sobre__sistema  {
+  margin: 0 auto 0 auto;
+  display: grid; 
+  max-width: 1200px;
+  grid-gap: 1.50em;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "sobre__sistema__box1 sobre__sistema__box4"
+  "sobre__sistema__box2 sobre__sistema__box4"
+  "sobre__sistema__box3 sobre__sistema__box4"
+  ;
+}
+
+.sobre__sistema__box1 {
+  grid-area: "sobre__sistema__box1";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre__sistema__box2 {
+  grid-area: "sobre__sistema__box2";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.sobre__sistema__box3 {
+  grid-area: "sobre__sistema__box3";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre__sistema__box4 {
+  grid-area: "sobre__sistema__box4";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5em 7em 0;
+}
+
+.sobre__sistema__titulo {
+  margin: 0 0 1em 0;
+}
+
+
+
+.sessao__ponto__xp {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2em;
+  grid-template-areas: 
+  "ponto__xp__box1 ponto__xp__box3"
+  "ponto__xp__box2 "  
+  ;
+}
+
+.ponto__xp__box1 {
+ grid-area: "ponto__xp__box1";
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 1;
+ grid-row-end: 4;
+ display: flex; 
+ flex-direction: column;
+ align-items: center;
+}
+
+
+
+
+.ponto__xp__box2 {
+  grid-area: "ponto__xp__box2";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 4em 0 0 0;
+}
+
+.ponto__xp__box3 {
+  grid-area: "ponto__xp__box3";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex; 
+ flex-direction: column;
+ align-items: center;
+}
+
+
+
+.sessao__habilidades__e__pericias {
+  max-width: 1200px;
+  display: grid;
+  grid-gap: 2em;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "habilidades__pericias__box1 habilidades__pericias__box4"
+  "habilidades__pericias__box2 habilidades__pericias__box5"
+  "habilidades__pericias__box3 "
+  ;
+  
+}
+
+.habilidades__pericias__box1 {
+ grid-area: "habilidades__pericias__box1";
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 1;
+ grid-row-end: 2;
+ display: flex; 
+ flex-direction: column;
+ align-items: center;
+}
+
+.habilidades__pericias__box2 {
+ grid-area: "habilidades__pericias__box2";
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 2;
+ grid-row-end: 3;
+ display: flex; 
+ flex-direction: column;
+ align-items: center;
+}
+
+
+
+.habilidades__pericias__box3 {
+  grid-area: "habilidades__pericias__box3";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.habilidades__pericias__box4 {
+  grid-area: "habilidades__pericias__box4";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 4em 0 0 0;
+}
+
+.habilidades__pericias__box5 {
+  grid-area: "habilidades__pericias__box5";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3 ;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: -15em 0 0 0;
+}
+
+.habilidades__pericias__box6 {
+  grid-area: "habilidades__pericias__box6";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: -15em 0 0 0;
+}
+
+
+.sessao__poderes__e__tecnicas {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "poderes__tecnicas__box1 poderes__tecnicas__box3"
+  "poderes__tecnicas__box2 poderes__tecnicas__box4"
+  ;
+}
+
+.poderes__tecnicas__box1 {
+  grid-area: "habilidades__pericias__box1";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+   
+}
+
+.poderes__tecnicas__box2 {
+  grid-area: "poderes__tecnicas__box2";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.poderes__tecnicas__box3 {
+  grid-area: "poderes__tecnicas__box3";
+  grid-column-start: 3;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 4em 0 0 0;
+}
+
+.poderes__tecnicas__box4 {
+  grid-area: "poderes__tecnicas__box4";
+  grid-column-start: 3;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 2;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0 0 1em;
+}
+
+.sessao__sistema__batalha {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "sistema__batalha__box1 sistema__batalha__box2"
+  "sistema__batalha__box1 sistema__batalha__box3"
+  ;
+}
+
+.sistema__batalha__box1 {
+  grid-area: "sistema__batalha__box1";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+   
+}
+
+.sistema__batalha__box2 {
+  grid-area: "sistema__batalha__box2";
+  grid-column-start: 3;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 4em 0 0 0;
+}
+
+.sistema__batalha__box3 {
+  grid-area: "sistema__batalha__box3";
+  grid-column-start: 3;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 2;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+   
+}
+
+.sessao__planeta__gaia {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 50% 50%;
+}
+
+.planeta__gaia__box1 {
+  grid-area: "planeta__gaia__box1";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: ;
+  grid-row-end: ;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 0 0 0 ;
+}
+
+.planeta__gaia__box2 {
+  grid-area: "planeta__gaia__box2";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: ;
+  grid-row-end: ;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 4em 0 ;
+}
+
+.planeta__gaia__box3 {
+  grid-area: "planeta__gaia__box3";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: ;
+  grid-row-end: ;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0 0 0;
+}
+
+.planeta__gaia__box4 {
+  grid-area: "planeta__gaia__box4";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: ;
+  grid-row-end: ;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0 0 0;
+}
+
+.planeta__gaia__box5 {
+  grid-area: "planeta__gaia__box5";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: ;
+  grid-row-end: ;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.planeta__gaia__box6 {
+  grid-area: "planeta__gaia__box6";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 6em 0 0 0;
+  
+}
+
+.sessao__loja__sistema {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 50% 50%;
+}
+
+.loja__sistema__box1 {
+  grid-area: "loja__sistema__box1";
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+
+.loja__sistema__box2 {
+  grid-area: "loja__sistema__box2";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 5.75em 5.50em 0 0;
+  
+}
+
+.loja__sistema__box3 {
+  grid-area: "loja__sistema__box3";
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 0;
+  grid-row-end: 0;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+.sessao__plataformas__auxiliares {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto 0 auto;
+  grid-template-columns: 50% 50%;
+}
+
+.plataformas__auxiliares__imagem1 {
+  margin: 0 0 0 4em;
+}
+
+.plataformas__auxiliares__box2 {
+  border: 5px solid var(--cor-fonte-secundario);
+  border-radius: 10px;
+  padding: 0.25em 0.25em;
+  grid-area: "loja__sistema__box3";
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
