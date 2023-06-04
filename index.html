@@ -5,72 +5,108 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="./js/script.js">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/responsivo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-  <header class="cabecalho">
+  <header class="cabecalho" id="cabecalho">
+    <div class="icone__menu__responsivo">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="logo__responsivo">
+      <p>Projeto RPG Web</p>
+    </div>
     <nav class="cabecalho__menu">
       <ul>
         <a class="cabecalho__menu__link" href="./index.html">Pagina Principal</a>
         <a class="cabecalho__menu__link" href="./guiadosistema.html">Guia do Sistema</a>
-        <a class="cabecalho__menu__link" href="#">missões</a>
+        <a class="cabecalho__menu__link" href="#">Missões</a>
         <a class="cabecalho__menu__link" href="#">Mural de Informações</a>
         <a class="cabecalho__menu__link" href="#">Manuais e Complementos</a>
         <a class="cabecalho__menu__link" href="#">Área do Jogador</a>
         <a class="cabecalho__menu__link" href="#">Loja do Sistema</a>
         <a class="cabecalho__menu__link" href="#">Registros das Sessões</a>
-      </ul>
+      </ul>     
     </nav>
+    <!--<div class="icone__menu__responsivo2">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>-->
   </header>
+  <div class="dropdown__menu">
+    <li><a class="cabecalho__menu__link" href="./index.html">Pagina Principal</a></li>
+    <li><a class="cabecalho__menu__link" href="./guiadosistema.html">Guia do Sistema</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Missões</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Mural de Informações</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Manuais e Complementos</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Área do Jogador</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Loja do Sistema</a></li>
+    <li><a class="cabecalho__menu__link" href="#">Registros das Sessões</a></li>
+  </div>
   <main class="Principal">
-    <section class="sessao__principal conteiner">
-      <div class="sessao__principal__conteudo">
+    <section class="sessao__principal">
+      <div class="sessao__principal__box1">
         <h1 class="titulo__principal"><strong class="titulo__principal__str">Viajantes de outro mundo:</strong> Reencarnado em um mundo de espadas e magia. </h1>
-        <p class="paragrafo conteudo__principal">Ola jogador(a), antes de tudo deixe eu me apresentar, eu sou o <strong class="paragrafo__principal__str">Sistema</strong>. Estarei aqui para orienta-lo(a)<br> em sua jornada... Já que terminamos, as formalidades podemos continuar...</p>
+        <p class="paragrafo conteudo__principal">Ola jogador(a), antes de tudo deixe eu<br class="responsivo2"> me apresentar, eu sou <br class="responsivo1">o <strong class="paragrafo__principal__str">Sistema</strong>. <br class="responsivo1"><br class="responsivo1"><br class="responsivo2"><br class="responsivo2">Estarei aqui para orienta-lo(a)<br class="responsivo1__none"> em sua jornada... Já que terminamos, as formalidades podemos continuar...</p>
         <p class="paragrafo conteudo__principal">Agora irei introduzi-lo(a) ao ambiente ligado ao personagem que você ira criar. A partir dessas informações você terá uma base para desenvolver a sua historia.</p>
         <p class="paragrafo conteudo__principal">Seu personagem terá a idade entre 17 e 22 anos, ou seja, ele está no ultimo ano do colegial, é<br> um universitário(a) ou talvez seja apenas um trabalhador(a).</p>
         <p class="paragrafo conteudo__principal">Por algum motivo sua vida nunca foi fácil, sempre tendo que se esforçar mais do que todos e mesmo assim nunca se destacando. Poderia dizer que era falta de talento ou simplesmente falta de sorte, e muitas vezes as pessoas se aproveitavam do(a) seu(a) personagem, tiravam vantagem ou apenas o(a) subestimavam. Como já se dizia "você é o que você tem ou o quê pode oferecer..."</p>
         <p class="paragrafo conteudo__principal">E como se nada que já não estivesse tão ruim que não pudesse piorar, seu(sua) personagem acaba morrendo de uma forma um tanto absurda. Fica ao seu critério se vai ser uma morte totalmente sem noção, uma morte extremamente cômica, dramática ou triste e solitária...</p>
       </div>
-      <div class="sessao__principal__imagem"><img src="./assets/aniyuki-sad-anime-avatar-image-51-1024x1024.jpg" alt="Imagem garota chorando na chuva"></div>
-      <div class="sessao__principal__imagem"><img src="./assets/LX9xQp1A_400x400.jpg"></div>
-      <div class="sessao__principal__imagem__1"><img src="./assets/Screen-Shot-2022-01-13-at-10.53.08-AM.avif"></div>    
+      <div class="sessao__principal__box2">
+        <img src="./assets/aniyuki-sad-anime-avatar-image-51-1024x1024.jpg" alt="" class="sessao__principal__imagem1">
+        <img src="./assets/LX9xQp1A_400x400.jpg" alt="" class="sessao__principal__imagem2"></div>
+      <div class="sessao__principal__box3"><img src="./assets/Screen-Shot-2022-01-13-at-10.53.08-AM.avif" alt="" class="sessao__principal__imagem3"></div>
     </section>
-    <section class="sessao__secundaria conteiner">
-    <div class="sessao__secundaria__imagem"><img src="./assets/robson.jfif"></div>
-    <div class="sessao__secundaria__conteudo">
-      <h2 class="titulo__secundario"><strong class="titulo__secundario__str">A morte</strong> que nós conhecemos <strong class="titulo__secundario__str">é o fim definitivo...?</strong></h2>
-      <p class="paragrafo conteudo__principal">Devido ao forte sentimento que se desencadeou no ultimo momento, um <strong class="paragrafo__principal__str">Celestial</strong> que estava proximo do planeta Terra sentiu a ressonância incomum da alma do seu(sua) personagem. e Isso chamou sua atenção.</p>
-      <p class="paragrafo conteudo__principal">Antes que o ciclo de reencarnação reivindicasse as almas dos mortos, sem que ninguem percebesse algumas almas estavam sendo convocadas para ou outro local...</p>
-      <p class="paragrafo conteudo__principal">Dentro de um vazio infinito um ser de aparência colossal e exalando poder com sua presença, aparece e faz uma proposta um tanto tentadora quanto duvidosa...</p>
-      <p class="paragrafo conteudo__principal">O <strong class="paragrafo__principal__str">Celestial</strong> explica que foi selado e esta preso a milhares de anos e estava muito entediado. e ao sentir a ressonância da alma, ficou curioso e convocou algumas almas bem distintas para não dizer o mínimo.</p>
-      <p class="paragrafo conteudo__principal">Ele diz que pode criar novos corpos e conceber uma centelha de sua divindade desbloqueando potencial ilimitado, o <strong class="paragrafo__principal__str">Sistema Ex</strong> . E os enviariam ao mundo considerado superior em comparação a Terra.</p>
-      <p class="paragrafo conteudo__principal">Em troca ele vai assistir sua jornada como seu canal de stream particular. E agora você irá aceitar a oferta?</p>
-    </div>
+    <section class="sessao__principal__2">
+      <div class="sessao__principal__2__box1"><img src="./assets/robson.jfif" alt="" class="sessao__principal__2__imagem1"></div>
+      <div class="sessao__principal__2__box2">
+        <h2 class="titulo__secundario"><strong class="titulo__secundario__str">A morte</strong> que nós conhecemos <strong class="titulo__secundario__str">é o fim definitivo...?</strong></h2>
+        <p class="paragrafo conteudo__principal">Devido ao forte sentimento que se desencadeou no ultimo momento, um <strong class="paragrafo__principal__str">Celestial</strong> que estava proximo do planeta Terra sentiu a ressonância incomum da alma do seu(sua) personagem. e Isso chamou sua atenção.</p>
+        <p class="paragrafo conteudo__principal">Antes que o ciclo de reencarnação reivindicasse as almas dos mortos, sem que ninguém percebesse algumas almas estavam sendo convocadas para ou outro local...</p>
+        <p class="paragrafo conteudo__principal">Dentro de um vazio infinito um ser de aparência colossal e exalando poder com sua presença, aparece e faz uma proposta um tanto tentadora quanto duvidosa...</p>
+        <p class="paragrafo conteudo__principal">O <strong class="paragrafo__principal__str">Celestial</strong> explica que foi selado e esta preso a milhares de anos e estava muito entediado. e ao sentir a ressonância da alma, ficou curioso e convocou algumas almas bem distintas para não dizer o mínimo.</p>
+        <p class="paragrafo conteudo__principal">Ele diz que pode criar novos corpos e conceber uma centelha de sua divindade desbloqueando potencial ilimitado, o <strong class="paragrafo__principal__str">Sistema Ex</strong>.E os enviariam ao mundo considerado superior em comparação a Terra.</p>
+        <p class="paragrafo conteudo__principal">Em troca ele vai assistir sua jornada como seu canal de stream particular. <br class="responsivo2">E agora você irá aceitar a oferta?</p>  
+      </div>
     </section>
     <section class="sessao__gaia">
-      <div>
-        <h2 class="titulo__planeta">Gaia</h2>
-        <img class="imagem__planeta" src="./assets/planetagaia.jpg">
-      </div>
-      <div>
+      <div class="sessao__gaia__box1"><img src="./assets/planetagaia.jpg" alt="" class="sessao__gaia__imagem1"></div>
+      <div class="sessao__gaia__box2">        
         <p class="paragrafo conteudo__principal">É aqui que sua jornada começa, e você precisa fazer uma escolha. Você vai aceitar a oferta?</p>
       </div>
-      <div class="conteiner__botao">
-        <div class="botao__escolha__sim__box">
-          <a class="botao__escolha__sim" href="./guiadosistema.html">Sim, eu aceito a oferta</a>
-        </div>
-        <div class="botao__escolha__nao__box">
-          <a class="botao__escolha__nao" href="./respostanao.html">Não</a>
-        </div>
+      <div class="sessao__gaia__box3">
+        <div class="conteiner__botao">
+          <div class="botao__escolha__sim__box">
+            <a class="botao__escolha__sim" href="./guiadosistema.html">Sim, eu aceito a oferta</a>
+          </div>
+          <div class="botao__escolha__nao__box">
+            <a class="botao__escolha__nao" href="./respostanao.html">Não</a>
+          </div>  
       </div>
     </section>
   </main>
   <footer>
 
   </footer>
+  <script>
+    const botaoMenu = document.querySelector(".icone__menu__responsivo")
+    const botaoMenuIcone = document.querySelector(".icone__menu__responsivo i")
+    const dropdownMenu = document.querySelector(".dropdown__menu")
+
+    botaoMenu.onclick = function () {
+    dropdownMenu.classList.toggle("open")
+    const isOpen = dropdownMenu.classList.contains("open")
+    
+    botaoMenuIcone.classList = isOpen
+      ? "fa-solid fa-xmark"
+      : "fa-solid fa-bars"
+
+    }
+  </script>
 </body>
 </html>
